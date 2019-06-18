@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+html{
+    background: radial-gradient(circle,#ffffff,#cccccc);
+    background: -webkit-radial-gradient(circle,#ffffff,#cccccc);
+    background: -o-radial-gradient(circle,#ffffff,#cccccc);
+    background: -moz-radial-gradient(circle,#ffffff,#cccccc);
+    height: 100%;
+}
+#container{
+    height: 600px;
+    width: 750px;
+    background: linear-gradient(#74e2f0,#71b2f9);
+    background: -o-linear-gradient(#74e2f0,#71b2f9);
+    background: -webkit-linear-gradient(#74e2f0,#71b2f9);
+    background: -moz-linear-gradient(#74e2f0,#71b2f9);
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 0px #0365cd;
+/*        box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]*/
+    -o-box-shadow: 3px 3px 3px 0px #0365cd;
+    -webkit-box-shadow: 3px 3px 3px 0px #0365cd;
+    -moz-box-shadow: 3px 3px 3px 0px #0365cd;
+    position: relative;
+}
+
+#score{
+    background-color: #f8df3f;
+    font-family: 'Roboto',sans-serif;
+    font-size: 16.75px;
+    padding: 11px;
+    float: right;
+    box-shadow: 0px 3px 3px 0px #db9900;
+    -o-box-shadow: 0px 3px 3px 0px #db9900;
+    -webkit-box-shadow: 0px 3px 3px 0px #db9900;
+    -moz-box-shadow: 0px 3px 3px 0px #db9900;
+}
+
+
+#fruitContainer{
+    width: 610px;
+    height: 376px;
+    background-color: white;
+    margin: 60px auto 10px auto;
+    box-shadow: 0px 3px 2px 0px #000d66;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+#instruction{
+    width: 450px;
+    height: 26px;
+    color: white;
+    background-color: #B481D9;
+    box-shadow: 3px 3px 2px #8153a8;
+    -o-box-shadow: 3px 3px 2px #8153a8;
+    -webkit-box-shadow: 3px 3px 2px #8153a8;
+    -moz-box-shadow: 3px 3px 2px #8153a8;
+    margin: 30px auto 30px auto;
+    text-align: center;
+    font-family: 'Oswald',sans-serif;
+    font-size: 17px;
+    letter-spacing: 0.25px;
+    padding: 12px 0px;
+    border-radius: 5px;
+}
+
+#startreset{
+/*    float:none;*/
+    height: 20px;
+    width: 100px;
+    background-color: #90d7e4;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 0px;
+    font-family: 'Roboto',sans-serif;
+    letter-spacing: 0.25px;
+    font-size: 15px;
+    box-shadow: 0px 3px 2px 0px #0365cd;
+    margin: 5px auto;
+    cursor: pointer;
+    transition: all 0.15s;
+    -webkit-transition: all 0.15s;
+    -o-transition: all 0.15s;
+    -moz-transition: all 0.15s;
+    -ms-transition: all 0.15s;
+}
+
+#startreset:active{
+    background-color: grey;
+    color: white;
+    box-shadow: 0px 0px;
+    top: 4px;   /*Shrinks down a little when clicked*/
+}
+
+#lives{
+/*    height: 20px;*/
+    width: auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #f8df3f;
+    font-family: 'Nunito', sans-serif;
+    box-shadow: 0px 3px 3px 0px #db9900;
+    -o-box-shadow: 0px 3px 3px 0px #db9900;
+    -webkit-box-shadow: 0px 3px 3px 0px #db9900;
+    -moz-box-shadow: 0px 3px 3px 0px #db9900;
+    float:left;
+    display: none;
+}
+
+#gameover{
+    width: 500px;
+    height: 140px;
+    background: linear-gradient(#f98f8f,#f9bd8f);
+    background: -o-linear-gradient(#f98f8f,#f9bd8f);
+    background: -webkit-linear-gradient(#f98f8f,#f9bd8f);
+    background: -moz-linear-gradient(#f98f8f,#f9bd8f);
+    position: absolute;
+    top: 160px;
+    left:145px;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 23px;
+    padding: 30px 0px;
+    box-shadow: 3px 3px 3px 0px #f04747;
+    border-radius: 5px;
+    display: none;
+}
+
+.heartImage{
+    height: 14px;
+    width: 14px;
+    margin: 0px 5px;
+}
+
+.fruit{
+    display: none;
+    position: absolute;
+}
